@@ -30,13 +30,13 @@ void InPage(int firstchoise)
     switch (firstchoise)
     {
         case 1:
-            Console.WriteLine("In\n\n1 - °F\n2 - °K\n");
+            Console.WriteLine("To\n\n1 - °F\n2 - °K\n");
             break;
         case 2:
-            Console.WriteLine("In\n\n1 - °C\n2 - °K\n");
+            Console.WriteLine("To\n\n1 - °C\n2 - °K\n");
             break;
         case 3:
-            Console.WriteLine("In\n\n1 - °C\n2 - °F\n");
+            Console.WriteLine("To\n\n1 - °C\n2 - °F\n");
             break;
     }
 }

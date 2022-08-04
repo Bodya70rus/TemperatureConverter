@@ -108,7 +108,7 @@ void Err()
     Console.ReadLine();
 }
 
-//========
+// Main ==========
 
 int firstChoise, secondChoise;
 double value;
@@ -116,26 +116,17 @@ double value;
 FromPage();
 
 if (!int.TryParse(Console.ReadLine(), out firstChoise) || !RangeCheck(firstChoise, 1, 3))
-{
-    Err();
-    return;
-}
+{ Err(); return; }
 
 EnterPage();
 
 if (!double.TryParse(Console.ReadLine(), out value))
-{
-    Err();
-    return;
-}
+{ Err(); return; }
 
 InPage(firstChoise);
 
 if (!int.TryParse(Console.ReadLine(), out secondChoise) || !RangeCheck(secondChoise, 1, 2))
-{
-    Err();
-    return;
-}
+{ Err(); return; }
 
 Switcher(value, firstChoise, secondChoise);
 

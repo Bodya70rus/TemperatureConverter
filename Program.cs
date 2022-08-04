@@ -95,29 +95,47 @@ void Switcher(double value, int firstChoise, int secondChoise)
     }
 }
 
+bool RangeCheck(int value, int left, int right)
+{
+    if (value >= left && value <= right) return true;
+    else return false;
+}
+
 void Err()
 {
     Console.Clear();
     Console.WriteLine("Incorrect input format");
     Console.ReadLine();
-    return;
 }
 
 //========
 
-int firstChoise, secondChoise, value;
+int firstChoise, secondChoise;
+double value;
 
 FromPage();
 
-firstChoise = int.Parse(Console.ReadLine());
+if (!int.TryParse(Console.ReadLine(), out firstChoise) || !RangeCheck(firstChoise, 1, 3))
+{
+    Err();
+    return;
+}
 
 EnterPage();
 
-value = int.Parse(Console.ReadLine());
+if (!double.TryParse(Console.ReadLine(), out value))
+{
+    Err();
+    return;
+}
 
 InPage(firstChoise);
 
-secondChoise = int.Parse(Console.ReadLine());
+if (!int.TryParse(Console.ReadLine(), out secondChoise) || !RangeCheck(secondChoise, 1, 2))
+{
+    Err();
+    return;
+}
 
 Switcher(value, firstChoise, secondChoise);
 

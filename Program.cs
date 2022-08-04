@@ -23,21 +23,15 @@ void EnterPage()
     Console.Write("Enter a value: ");
 }
 
-void InPage(int firstchoise)
+void ToPage(int firstchoise)
 {
     Console.Clear();
 
     switch (firstchoise)
     {
-        case 1:
-            Console.WriteLine("To\n\n1 - °F\n2 - °K\n");
-            break;
-        case 2:
-            Console.WriteLine("To\n\n1 - °C\n2 - °K\n");
-            break;
-        case 3:
-            Console.WriteLine("To\n\n1 - °C\n2 - °F\n");
-            break;
+        case 1: { Console.WriteLine("To\n\n1 - °F\n2 - °K\n"); break; }
+        case 2: { Console.WriteLine("To\n\n1 - °C\n2 - °K\n"); break; }
+        case 3: { Console.WriteLine("To\n\n1 - °C\n2 - °F\n"); break; }
     }
 }
 
@@ -50,43 +44,25 @@ void Switcher(double value, int firstChoise, int secondChoise)
         case 1:
             switch (secondChoise)
             {
-                case 1:
-                    Console.WriteLine($"{value}°C = {CelFar(value)}°F");
-                    break;
-                case 2:
-                    Console.WriteLine($"{value}°C = {CelKel(value)}°K");
-                    break;
-                default:
-                    Err();
-                    break;
+                case 1: { Console.WriteLine($"{value}°C = {CelFar(value)}°F"); break; }
+                case 2: { Console.WriteLine($"{value}°C = {CelKel(value)}°K"); break; }
+                default: { Err(); break; }
             }
             break;
         case 2:
             switch (secondChoise)
             {
-                case 1:
-                    Console.WriteLine($"{value}°F = {FarCel(value)}°C");
-                    break;
-                case 2:
-                    Console.WriteLine($"{value}°F = {FarKel(value)}°K");
-                    break;
-                default:
-                    Err();
-                    break;
+                case 1: { Console.WriteLine($"{value}°F = {FarCel(value)}°C"); break; }
+                case 2: { Console.WriteLine($"{value}°F = {FarKel(value)}°K"); break; }
+                default: { Err(); break; }
             }
             break;
         case 3:
             switch (secondChoise)
             {
-                case 1:
-                    Console.WriteLine($"{value}°K = {KelCel(value)}°C");
-                    break;
-                case 2:
-                    Console.WriteLine($"{value}°K = {KelFar(value)}°F");
-                    break;
-                default:
-                    Err();
-                    break;
+                case 1: { Console.WriteLine($"{value}°K = {KelCel(value)}°C"); break; }
+                case 2: { Console.WriteLine($"{value}°K = {KelFar(value)}°F"); break; }
+                default: { Err(); break; }
             }
             break;
         default:
@@ -123,7 +99,7 @@ EnterPage();
 if (!double.TryParse(Console.ReadLine(), out value))
 { Err(); return; }
 
-InPage(firstChoise);
+ToPage(firstChoise);
 
 if (!int.TryParse(Console.ReadLine(), out secondChoise) || !RangeCheck(secondChoise, 1, 2))
 { Err(); return; }

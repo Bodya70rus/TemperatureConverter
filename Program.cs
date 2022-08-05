@@ -90,16 +90,6 @@ bool RangeCheck(int value, int left, int right)
     else return false;
 }
 
-int CheckerInput(int left, int right) // 1 - choise, 0 - value
-{
-    int value;
-
-    if (!int.TryParse(Console.ReadLine(), out value) || !RangeCheck(value, left, right))
-    { return value; }
-    else
-    { value = 0; return value; }
-}
-
 // Main ==========
 
 int firstChoise, secondChoise;
@@ -107,10 +97,8 @@ double value;
 
 FromPage();
 
-if (CheckerInput(1, 3) == 0)
+if (!int.TryParse(Console.ReadLine(), out firstChoise) || !RangeCheck(firstChoise, 1, 3))
 { ErrPage(); return; }
-else
-{ firstChoise = CheckerInput(1, 3); }
 
 EnterPage();
 
@@ -119,10 +107,8 @@ if (!double.TryParse(Console.ReadLine(), out value))
 
 ToPage(firstChoise);
 
-if (CheckerInput(1, 2) == 0)
+if (!int.TryParse(Console.ReadLine(), out secondChoise) || !RangeCheck(secondChoise, 1, 2))
 { ErrPage(); return; }
-else
-{ secondChoise = CheckerInput(1, 2); }
 
 Switcher(value, firstChoise, secondChoise);
 

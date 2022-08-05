@@ -90,26 +90,35 @@ bool RangeCheck(int value, int left, int right)
     else return false;
 }
 
+// Program ==========
+
+void StartPrg()
+{
+    int firstChoise, secondChoise;
+    double value;
+
+    FromPage();
+
+    if (!int.TryParse(Console.ReadLine(), out firstChoise) || !RangeCheck(firstChoise, 1, 3))
+    { ErrPage(); StartPrg(); }
+
+    EnterPage();
+
+    if (!double.TryParse(Console.ReadLine(), out value))
+    { ErrPage(); StartPrg(); }
+
+    ToPage(firstChoise);
+
+    if (!int.TryParse(Console.ReadLine(), out secondChoise) || !RangeCheck(secondChoise, 1, 2))
+    { ErrPage(); StartPrg(); }
+
+    Switcher(value, firstChoise, secondChoise);
+
+    Console.ReadLine();
+
+    StartPrg();
+}
+
 // Main ==========
 
-int firstChoise, secondChoise;
-double value;
-
-FromPage();
-
-if (!int.TryParse(Console.ReadLine(), out firstChoise) || !RangeCheck(firstChoise, 1, 3))
-{ ErrPage(); return; }
-
-EnterPage();
-
-if (!double.TryParse(Console.ReadLine(), out value))
-{ ErrPage(); return; }
-
-ToPage(firstChoise);
-
-if (!int.TryParse(Console.ReadLine(), out secondChoise) || !RangeCheck(secondChoise, 1, 2))
-{ ErrPage(); return; }
-
-Switcher(value, firstChoise, secondChoise);
-
-Console.ReadLine();
+StartPrg();

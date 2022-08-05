@@ -44,6 +44,7 @@ void ErrPage()
     Console.Clear();
     Console.WriteLine("Incorrect input format");
     Console.ReadLine();
+    StartPrg();
 }
 
 // Scripts ==========
@@ -100,17 +101,17 @@ void StartPrg()
     FromPage();
 
     if (!int.TryParse(Console.ReadLine(), out firstChoise) || !RangeCheck(firstChoise, 1, 3))
-    { ErrPage(); StartPrg(); }
+    { ErrPage(); }
 
     EnterPage();
 
     if (!double.TryParse(Console.ReadLine(), out value))
-    { ErrPage(); StartPrg(); }
+    { ErrPage(); }
 
     ToPage(firstChoise);
 
     if (!int.TryParse(Console.ReadLine(), out secondChoise) || !RangeCheck(secondChoise, 1, 2))
-    { ErrPage(); StartPrg(); }
+    { ErrPage(); }
 
     Switcher(value, firstChoise, secondChoise);
 

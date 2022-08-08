@@ -1,0 +1,15 @@
+/Users/bogdanlachinov/Desktop/C#/TemperatureConverter/bin/Debug/net6.0/TemperatureConverter
+/Users/bogdanlachinov/Desktop/C#/TemperatureConverter/bin/Debug/net6.0/TemperatureConverter.deps.json
+/Users/bogdanlachinov/Desktop/C#/TemperatureConverter/bin/Debug/net6.0/TemperatureConverter.runtimeconfig.json
+/Users/bogdanlachinov/Desktop/C#/TemperatureConverter/bin/Debug/net6.0/TemperatureConverter.dll
+/Users/bogdanlachinov/Desktop/C#/TemperatureConverter/bin/Debug/net6.0/TemperatureConverter.pdb
+/Users/bogdanlachinov/Desktop/C#/TemperatureConverter/obj/Debug/net6.0/TemperatureConverter.csproj.AssemblyReference.cache
+/Users/bogdanlachinov/Desktop/C#/TemperatureConverter/obj/Debug/net6.0/TemperatureConverter.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bogdanlachinov/Desktop/C#/TemperatureConverter/obj/Debug/net6.0/TemperatureConverter.AssemblyInfoInputs.cache
+/Users/bogdanlachinov/Desktop/C#/TemperatureConverter/obj/Debug/net6.0/TemperatureConverter.AssemblyInfo.cs
+/Users/bogdanlachinov/Desktop/C#/TemperatureConverter/obj/Debug/net6.0/TemperatureConverter.csproj.CoreCompileInputs.cache
+/Users/bogdanlachinov/Desktop/C#/TemperatureConverter/obj/Debug/net6.0/TemperatureConverter.dll
+/Users/bogdanlachinov/Desktop/C#/TemperatureConverter/obj/Debug/net6.0/refint/TemperatureConverter.dll
+/Users/bogdanlachinov/Desktop/C#/TemperatureConverter/obj/Debug/net6.0/TemperatureConverter.pdb
+/Users/bogdanlachinov/Desktop/C#/TemperatureConverter/obj/Debug/net6.0/TemperatureConverter.genruntimeconfig.cache
+/Users/bogdanlachinov/Desktop/C#/TemperatureConverter/obj/Debug/net6.0/ref/TemperatureConverter.dll

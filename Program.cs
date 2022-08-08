@@ -44,7 +44,7 @@ void ErrPage()
     Console.Clear();
     Console.WriteLine("Incorrect input format");
     Console.ReadLine();
-    StartPrg();
+    StartProgram();
 }
 
 // Scripts ==========
@@ -93,7 +93,7 @@ bool RangeCheck(int value, int left, int right)
 
 // Program ==========
 
-void StartPrg()
+void StartProgram()
 {
     int firstChoise, secondChoise;
     double value;
@@ -117,9 +117,9 @@ void StartPrg()
 
     Console.ReadLine();
 
-    StartPrg();
+    StartProgram();
 }
 
 // Main ==========
 
-StartPrg();
+StartProgram();
